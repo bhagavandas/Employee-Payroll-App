@@ -47,18 +47,19 @@
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     border: 0px solid green;
   }
 
   .form {
-    width: 65%;
+    width: 85%;
     padding: 44px 60px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #f5f5f5;
     border-radius: 8px;
     opacity: 1;
+    
     
   }
 
@@ -74,9 +75,10 @@
   .profile-radio-content {
     display: flex;
     flex-direction: row;
+    
   }
 
-  .profile-radio-content > label {
+  .profile-radio-content >  {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -119,7 +121,7 @@
     cursor: pointer;
   }
   .submitButton {
-    border: none;
+    border:  1px solid #707070;
     background-color: #f5f5f5;
     margin-right: 30px;
   }

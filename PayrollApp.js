@@ -22,9 +22,11 @@ const salary = document.querySelector('#salary');
             }
         
             set name(name) {
-               
+                let nameRegex = RegExp('^[A-Z]{1}[a-z]{3,}$');
+                if (nameRegex.test(name))
                     this._name = name;
-               
+                else
+                    throw "Name is incorrect";
             }
         
             get profileImage() {
@@ -90,10 +92,10 @@ const salary = document.querySelector('#salary');
         }
         
         function save() {
-        
-            let employeeName = document.querySelector('#name').value;
+            const employeeName = document.querySelector('#name').value;
             let profileList = document.querySelectorAll('input[name="profile"]');
             let employeeProfileImage;
+            employeeName.addEventListener('input', function(){
             for (let image of profileList) {
                 if (image.checked) {
                     employeeProfileImage = image.value;

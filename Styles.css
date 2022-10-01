@@ -47,7 +47,7 @@
     background-color: #f7f7f7;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     border: 0px solid green;
   }
 
@@ -60,7 +60,6 @@
     border-radius: 8px;
     opacity: 1;
     
-    
   }
 
   .form-head {
@@ -72,23 +71,94 @@
     padding-bottom: 20px;
   }
 
-  .profile-radio-content {
-    display: flex;
-    flex-direction: row;
+
+
+  .label {
+    min-width: 140px;
+    
     
   }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    
+  }
+
+
+
+  .input {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+ 
 
   .profile-radio-content >  {
     display: flex;
     flex-direction: row;
     align-items: center;
+ 
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
   }
 
   .profile {
     width: 40px;
     border-radius: 50%;
     margin-left: 12px;
+    
   }
+  
+  .row-Deptcontent {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+  }
+
+  .row-Gendercontent {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: center;
+    border: 0px solid green;
+  }
+
+  .row-Datecontent {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 0px solid green;
+}
+
+ 
+.row-Salarycontent {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 0px solid green;
+}
+
+  
+.row-Notescontent {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 0px solid green;
+}
+
+
+   
   select{
     padding: 12px;
     border: 1px solid #ccc;
@@ -128,11 +198,17 @@
   .cancelButton {
     text-decoration: 140px;
     text-align: center;
+    background-color: #f5f5f5;
   }
-  @media only screen and (max-width: 960px) {
+  .submit-reset {
+    text-decoration: 140px;
+    text-align: center;
+    background-color: #f5f5f5;
+
+  @media only screen and (max-width: 600px) {
     .form {
       width: 85%;
-      padding: 44px 20px;
+      padding: 0px;
       margin-top: 10px;
     }
     .row {
@@ -147,9 +223,12 @@
     .submit-reset {
       width: 100%;
       display: flex;
+      flex-grow: 1;
       flex-direction: row-reverse;
       justify-content: space-between;
       margin-bottom: 20px;
+      background-color: #f5f5f5;
+      
     }
     .submitButton {
       margin: 0;
@@ -158,8 +237,8 @@
       flex-direction: column-reverse;
       align-items: flex-start;
     }
-    .cancelButton {
-      margin-left: 0px;
-    }
+    
   }
+
+
 </style>

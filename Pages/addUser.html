@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/user.css"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;
+        0,200;0,300;0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Employee Payroll App</title>
+    <script defer src="EmployeePayrollData.js"></script>
+</head>
+<body>
+    <!.....UC1.....>
+    <header class="header-content header">
+        <div class="logo-content">
+            <img src="../assets/images/logo.png" alt="">
+            <div>
+                <span class="emp-text">EMPLOYEE</span><br>
+                <span class="emp-text emp-payroll">PAYROLL</span>
+            </div>
+        </div>
+       
+    </header>
+    <div class="main-content">
+        <!.....UC2.....>
+            <div class="header-content">
+                <div class=emp-detail-text>
+                    Employee Details<div class="emp-count"></div>
+            </div>
+            <a href="../Pages/PayRollForm.html" class="add-button">
+                <img src="../assets/icons/add-24px.svg" alt="">Add User</a>
+            </div>
+            <table id="display" class="table">
+                <!.....UC3.....>
+                <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td><img class="profile" alt="" src="../assets/profile-images/Ellipse -2.png">
+                    </td>
+                    <td>Bhagavan Das</td>
+                        <td>Male</td>
+                        <td><div class="dept-label">HR</div>
+                            
+                           </td>
+                        <td>3000000</td>
+                        <td>1 Nov 2020</td>
+                        <td>
+                            <img id="1" onclick="remove(this)" alt="delete"
+                                src="../assets/icons/delete-black-18dp.svg">
+                            <img id="1" alt="edit" onclick="update(this)" 
+                                src="../assets/icons/create-black-18dp.svg">
+                    </td>
+                                      
+                </tr>
+                <tr>
+                    <td><img class="profile" alt="" src="../assets/profile-images/Ellipse -2.png">
+                    </td>
+                    <td>Rakesh</td>
+                        <td>Male</td>
+                        <td><div class="dept-label">Finance</div>
+                            
+                           </td>
+                        <td>5000000</td>
+                        <td>25 May 2021</td>
+                        <td>
+                            <img id="1" onclick="remove(this)" alt="delete"
+                                src="../assets/icons/delete-black-18dp.svg">
+                            <img id="1" alt="edit" onclick="update(this)" 
+                                src="../assets/icons/create-black-18dp.svg">
+                    </td>
+                           
+                </tr>
+
+                <tr>
+                    <td><img class="profile" alt="" src="../assets/profile-images/Ellipse -2.png">
+                    </td>
+                    <td>Anirban</td>
+                        <td>Male</td>
+                        <td><div class="dept-label">Sales</div>
+                            
+                           </td>
+                        <td>7000000</td>
+                        <td>14 July 2022</td>
+                        <td>
+                            <img id="1" onclick="remove(this)" alt="delete"
+                                src="../assets/icons/delete-black-18dp.svg">
+                            <img id="1" alt="edit" onclick="update(this)" 
+                                src="../assets/icons/create-black-18dp.svg">
+                    </td>
+                           
+                </tr>
+                <tr>
+                    <td><img class="profile" alt="" src="../assets/profile-images/Ellipse -4.png">
+                    </td>
+                    <td>Sruthi</td>
+                        <td>Female</td>
+                        <td><div class="dept-label">Developer</div>
+                            
+                           </td>
+                        <td>4000000</td>
+                        <td>02 Oct 2022</td>
+                        <td>
+                            <img id="1" onclick="remove(this)" alt="delete"
+                                src="../assets/icons/delete-black-18dp.svg">
+                            <img id="1" alt="edit" onclick="update(this)" 
+                                src="../assets/icons/create-black-18dp.svg">
+                    </td>
+                           
+                </tr>
+                <tr>
+                    <td><img class="profile" alt="" src="../assets/profile-images/Ellipse -2.png">
+                    </td>
+                    <td>Ranjith</td>
+                        <td>Male</td>
+                        <td><div class="dept-label">Developer</div>
+                            
+                           </td>
+                        <td>3000000</td>
+                        <td>04 July 2020</td>
+                        <td>
+                            <img id="1" onclick="remove(this)" alt="delete"
+                                src="../assets/icons/delete-black-18dp.svg">
+                            <img id="1" alt="edit" onclick="update(this)" 
+                                src="../assets/icons/create-black-18dp.svg">
+                    </td>
+                           
+                </tr>
+
+            </table>
+        </div>
+        <script src="../JavaScript/EmployeePayrollData.js"></script>
+        <script src="../JavaScript/homePage.js"></script>
+        <script src="../JavaScript/PayrollForm.js"></script>
+        <script src="../JavaScript/site_properties.js"></script>
+        <script src="../JavaScript/utilities.js"></script>
+        
+    
+</body>
+</html>

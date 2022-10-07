@@ -4,12 +4,12 @@
 
             constructor(...params) {
                 this.name = params[0];
-                this.profileImage = params[1];
+                this.profilePic = params[1];
                 this.gender = params[2];
                 this.department = params[3];
                 this.salary = params[4];
                 this.startDate = params[5];
-                this.notes = params[6];
+                this.note = params[6];
             }
         
             get name() {
@@ -24,12 +24,12 @@
                     throw "Name is incorrect";
             }
         
-            get profileImage() {
-                return this.profileImage;
+            get profilePic() {
+                return this.profilePic;
             }
         
-            set profileImage(profileImage) {
-                this.profileImage = profileImage;
+            set profilePic(profilePic) {
+                this.profilePic = profilePic;
             }
         
             get gender() {
@@ -70,20 +70,20 @@
                     throw "Start date is Incorrect";
             }
         
-            get notes() {
-                return this.notes;
+            get note() {
+                return this.note;
             }
         
-            set notes(notes) {
-                this.notes = notes;
+            set note(note) {
+                this.note = note;
             }
         
         
             toString() {
                 const options = { year: 'numeric', month: 'long', day: 'numeric' };
                 const employeeDate = this.startDate == undefined ? "undefined" : this.startDate.toLocaleDateString("en-us", options);
-                return "Name = " + this.name + ", Profile Image = " + this.profileImage + ", Gender = " + this.gender + ", Department = " + this.department + ", Salary = " + this.salary + ", Start Date = " + employeeDate + ", Notes = " + this.notes;
+                return "Name = " + this.name + ", Profile Pic = " + this.profilePic + ", Gender = " + this.gender + ", Department = " + this.department + ", Salary = " + this.salary + ", Start Date = " + employeeDate + ", Notes = " + this.notes;
             }
         }
+
         
-       

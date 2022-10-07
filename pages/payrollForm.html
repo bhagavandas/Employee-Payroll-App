@@ -39,19 +39,16 @@
           </label>
           <label>
             <input type="radio" id="profile2" name="profile" value="../assets/profile-images/Ellipse -1.png" required>
-            <img class="profile" id="image2" src="../assets/profile-images/Ellipse -1.png">
+            <img class="profile" id="image2" src="../assets/profile-images/Ellipse -3.png">
           </label>
           <label>
             <input type="radio" id="profile3" name="profile" value="../assets/profile-images/Ellipse -8.png" required>
             <img class="profile" id="image3" src="../assets/profile-images/Ellipse -8.png">
           </label>
-          <label>
-            <input type="radio" id="profile4" name="profile" value="../assets/profile-images/Ellipse -7.png" required>
-            <img class="profile" id="image4" src="../assets/profile-images/Ellipse -7.png">
-          </label>
+         
           <label>
             <input type="radio" id="profile5" name="profile" value="../assets/profile-images/Ellipse -5.png" required>
-            <img class="profile" id="image5" src="../assets/profile-images/Ellipse -5.png">
+            <img class="profile" id="image5" src="../assets/profile-images/Ellipse -7.png">
           </label>
         </div>
       </div>
@@ -88,6 +85,7 @@
         <label class="label text" for="startDate">Start Date</label>
         <div id="date">
           <select id="day" name="Day">
+            <option value="day">Day</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -121,6 +119,7 @@
             <option value="31">31</option>
           </select>
           <select id="month" name="Month">
+            <option value="month">Month</option>
             <option value="1">January</option>
             <option value="2">February</option>
             <option value="3">March</option>
@@ -135,11 +134,13 @@
             <option value="12">December</option>
           </select>
           <select id="year" name="Year">
+            <option value="year">Year</option>
             <option value="2022">2022</option>
             <option value="2021">2021</option>
             <option value="2020">2020</option>
             <option value="2019">2019</option>
             <option value="2018">2018</option>
+            <option value="2017">2017</option>
           </select>
           <error-output class="date-error" for="startDate"></error-output>
         </div>
@@ -149,7 +150,7 @@
         <textarea class="input" id="notes" name="Notes" style="height: 100px;"></textarea>
       </div>
       <div class="buttonParent">
-        <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
+        <a href="../pages/homePage.html" class="resetButton button cancelButton">Cancel</a>
         <div class="submit-reset">
           <button type="submit" class="button submitButton" id="submitButton">Submit</button>
           <button type="reset" class="resetButton button">Reset</button>

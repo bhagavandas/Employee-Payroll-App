@@ -19,10 +19,10 @@ name.addEventListener('input', function() {
 const date = document.querySelector('#date');
 date.addEventListener('input', function() {
     let year = getInputValueById('#year');
-    let month = parseInt(getInputValueById('#month'))-1;
+    let month = parseInt(getInputValueById('#month'));
     let day = getInputValueById('#day');
     try{
-        (new EmployeePayRollData()).startDate = new Date(year,month,day);
+        (new EmployeePayRollData())._startDate = new Date(year,month,day);
         setTextValue('.date-error',"");
     }catch(e){
         setTextValue('.date-error',e);
@@ -62,7 +62,7 @@ const setEmployeePayrollObject = () => {
     employeePayrollObj._salary = getInputValueById('#salary');
     employeePayrollObj._note = getInputValueById('#notes');
     let year = getInputValueById('#year');
-    let month = parseInt(getInputValueById('#month'))-1;
+    let month = parseInt(getInputValueById('#month'));
     let day = getInputValueById('#day');
     employeePayrollObj._startDate = new Date(year,month,day);
 }
@@ -203,7 +203,7 @@ const setForm = () => {
     setTextValue('.salary-output', employeePayrollObj._salary);
     setValue('#notes', employeePayrollObj._note);
     let date = convertDate(employeePayrollObj._startDate).split("/");
-    setValue('#day',parseInt(date[0]));
-    setValue('#month',parseInt(date[1]));
+    setValue('#day',(date[0]));
+    setValue('#month',(date[1]));
     setValue('#year',date[2]);
 }

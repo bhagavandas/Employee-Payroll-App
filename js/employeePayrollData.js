@@ -1,12 +1,10 @@
 class EmployeePayRollData{
 
-    get id()
-    {
+    get id(){
         return this._id;
     }
 
-    set id(id)
-    {
+    set id(id){
         let idRegex = RegExp('[1-9]{1}[0-9]*');
         if(idRegex.test(id))
         this._id = id;
@@ -14,13 +12,11 @@ class EmployeePayRollData{
         throw 'Id is incorrect';
     }
 
-    get name()
-    {
+    get name(){
         return this._name;
     }
 
-    set name(name)
-    {
+    set name(name){
         let nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
         if(nameRegex.test(name))
         this._name = name;
@@ -28,73 +24,61 @@ class EmployeePayRollData{
         throw 'Name is incorrect';
     }
 
-    get profilePic()
-    {
+    get profilePic(){
         return this._profilePic;
     }
 
-    set profilePic(profilePic)
-    {
+    set profilePic(profilePic){
         this._profilePic = profilePic;
     }
 
-    get gender()
-    {
+    get gender(){
         return this._gender;
     }
 
-    set gender(gender)
-    {
+    set gender(gender){
         this._gender = gender;
     }
 
-    get department()
-    {
+    get department(){
         return this._department;
     }
 
-    set department(department)
-    {
+    set department(department){
         this._department = department;
     }
 
-    get salary()
-    {
+    get salary(){
         return this._salary;
     }
 
-    set salary(salary)
-    {
+    set salary(salary){
         this._salary = salary;
     }
 
-    get note()
-    {
+    get note(){
         return this._note;
     }
 
-    set note(note)
-    {
+    set note(note){
         this._note = note;
     }
 
-    get startDate()
-    {
+    get startDate(){
         return this._startDate;
     }
 
    
     set startDate(startDate) {
         let future = new Date();
-        future.setDate(future.getDate() + 30);
+        future.setDate(future.getDate());
         if (startDate < new Date() || startDate < future)
             this._startDate = startDate;
         else
             throw "Start date is Incorrect";
     }
 
-    toString()
-    {
+    toString(){
         const format = {year:'numeric', month:'numeric', day:'numeric'};
         const date = this.startDate === undefined ? "undefined" :
                      this.startDate.toLocaleDateString("en-GB",format);

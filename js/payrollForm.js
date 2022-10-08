@@ -19,7 +19,7 @@ name.addEventListener('input', function() {
 const date = document.querySelector('#date');
 date.addEventListener('input', function() {
     let year = getInputValueById('#year');
-    let month = parseInt(getInputValueById('#month'));
+    let month = (getInputValueById('#month'));
     let day = getInputValueById('#day');
     try{
         (new EmployeePayRollData())._startDate = new Date(year,month,day);
